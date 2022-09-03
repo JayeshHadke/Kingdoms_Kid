@@ -10,7 +10,7 @@ class CounsellingPage extends StatefulWidget {
 }
 
 class _CounsellingPageState extends State<CounsellingPage> {
-  String itemChoiced = CounsellingTypes[0];
+  String itemChoiced = CounsellingTypes[0].title.toString();
   String name = "", email = "", phoneNo = "";
   @override
   Widget build(BuildContext context) {
@@ -126,22 +126,31 @@ class _CounsellingPageState extends State<CounsellingPage> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.04,
                     ),
-                    Container(
+                    SizedBox(
                       width: MediaQuery.of(context).size.width * 0.3,
                       child: DropdownButton(
-                        items: CounsellingTypes.map((String items) {
-                          return DropdownMenuItem<String>(
-                            value: items,
-                            child: Text(
-                              items,
-                              style: TextStyle(
-                                  fontFamily: 'Dosis',
-                                  color: Colors.black,
-                                  fontSize: MediaQuery.of(context).size.height *
-                                      0.025),
-                            ),
-                          );
-                        }).toList(),
+                        items: CounsellingTypes.map(
+                          (CounsellingData items) {
+                            return DropdownMenuItem<String>(
+                              value: items.title,
+                              child: Tooltip(
+                                message: items.description,
+                                preferBelow: false,
+                                showDuration: const Duration(seconds: 2),
+                                waitDuration: const Duration(seconds: 1),
+                                child: Text(
+                                  items.title.toString(),
+                                  style: TextStyle(
+                                      fontFamily: 'Dosis',
+                                      color: Colors.black,
+                                      fontSize:
+                                          MediaQuery.of(context).size.width *
+                                              0.045),
+                                ),
+                              ),
+                            );
+                          },
+                        ).toList(),
                         onChanged: (value) {
                           setState(
                             () {

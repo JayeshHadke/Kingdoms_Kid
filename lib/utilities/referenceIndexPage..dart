@@ -8,6 +8,7 @@ import 'package:kingdoms_kids/widgets/counsellingPage.dart';
 import 'package:kingdoms_kids/widgets/curriculumPage.dart';
 import 'package:kingdoms_kids/widgets/resourcesPage.dart';
 import 'package:kingdoms_kids/widgets/storePage.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 //  Slider Section
 var arrSliderHeading = [
@@ -452,13 +453,28 @@ Map<String, String> getResourcesMap(ResourceTypes res) {
 }
 
 // Counselling Content
-var CounsellingTypes = <String>[
-  'Health',
-  'Relationship',
-  'Career',
-  'Study',
-  'Finance',
+var CounsellingTypes = <CounsellingData>[
+  CounsellingData(
+      title: 'Studies',
+      description: 'Failure in Exams/Inability to cope with Regular Studies'),
+  CounsellingData(
+      title: 'Relationship',
+      description:
+          'Relationship Anxiety/Infatuation/Direction to decide to express Love '),
+  CounsellingData(title: 'Addiction', description: 'Drug Abuse/Over Eating'),
+  CounsellingData(
+      title: 'Gender Choice',
+      description: 'Gender Choice and same Sex Attraction'),
+  CounsellingData(
+      title: 'Parental Abuse',
+      description: 'Parental abuse(single parent/step-parent)'),
 ];
+
+class CounsellingData {
+  String? title;
+  String? description;
+  CounsellingData({required this.title, required this.description});
+}
 
 // Store Content
 class StoreDetails {
@@ -649,11 +665,19 @@ Map<String, String> songsPlayerListByLanguage(int index) {
 var EnglishSong = {
   'Oggy': 'jATN1dx1j4E',
   'Apple': 'FzcfZyEhOoI',
-  'z': '',
-  'a': '',
-  'b': '',
-  'c': '',
-  'd': '',
+  'Oggy Returns': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=C5UQIuStwVY')
+      .toString(),
+  'Alaska': 'CHSnz0bCaUk',
+  'Lofi': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=yndhGWbxd0w')
+      .toString(),
+  'Time Management': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=vL2aMjFS3sI')
+      .toString(),
+  'Tree DS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=S2W3SXGPVyU')
+      .toString(),
 };
 var TamilSong = {'': ''};
 var TeluguSong = {'': ''};

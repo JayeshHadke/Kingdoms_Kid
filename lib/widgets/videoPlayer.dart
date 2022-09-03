@@ -51,7 +51,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
               ),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height * 0.3,
+              top: MediaQuery.of(context).size.height * 0.28,
               left: 0,
               right: 0,
               height: MediaQuery.of(context).size.height * 0.55,
@@ -61,22 +61,52 @@ class _VideoPlayerState extends State<VideoPlayer> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     child: Container(
-                      margin: const EdgeInsets.symmetric(vertical: 10),
+                      decoration: const BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            blurRadius: 1,
+                            offset: Offset(0, 1),
+                          ),
+                          BoxShadow(
+                            color: Colors.white,
+                            blurRadius: 2,
+                            offset: Offset(0, 0),
+                          ),
+                        ],
+                      ),
+                      margin: EdgeInsets.symmetric(
+                          vertical: MediaQuery.of(context).size.height * 0.01,
+                          horizontal: MediaQuery.of(context).size.width * 0.03),
                       height: 100,
                       width: double.maxFinite,
-                      color: Colors.pink,
-                      child: Column(
+                      child: Row(
                         children: [
-                          Text(
-                            songsPlayerListByLanguage(lanIndex)
-                                .keys
-                                .toList()[index],
+                          Image.network(
+                            YoutubePlayer.getThumbnail(
+                              videoId: songsPlayerListByLanguage(lanIndex)
+                                  .values
+                                  .toList()[index],
+                            ),
                           ),
-                          Text(
-                            songsPlayerListByLanguage(lanIndex)
-                                .values
-                                .toList()[index],
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.02,
                           ),
+                          Column(
+                            children: [
+                              Text(
+                                songsPlayerListByLanguage(lanIndex)
+                                    .keys
+                                    .toList()[index],
+                                style: TextStyle(
+                                    fontFamily: 'Dosis',
+                                    color: Colors.black,
+                                    fontSize:
+                                        MediaQuery.of(context).size.height *
+                                            0.028),
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ),
