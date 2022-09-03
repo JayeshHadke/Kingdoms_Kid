@@ -32,7 +32,6 @@ class _MusicPlayerState extends State<MusicPlayer> {
   Widget build(BuildContext context) {
     final val = ModalRoute.of(context)!.settings.arguments as passedArguments;
     int lanIndex = val.index;
-    int i = 0;
     return WillPopScope(
       onWillPop: () {
         Navigator.pop(context);
@@ -40,6 +39,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
       },
       child: SafeArea(
         child: Scaffold(
+          /* AppBar for Music Player Layout Page */
           appBar: AppBar(
             centerTitle: true,
             backgroundColor: mainColor,
@@ -51,8 +51,10 @@ class _MusicPlayerState extends State<MusicPlayer> {
                   fontSize: MediaQuery.of(context).size.height * 0.04),
             ),
           ),
+          /* Body of Music Player */
           body: Stack(
             children: [
+              /* Music Player List with Images and Titles */
               Positioned(
                 top: 0,
                 left: 0,
@@ -60,8 +62,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
                 height: MediaQuery.of(context).size.height * 0.74,
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
-                  itemCount:
-                      callMusicPlayerByLanguage(lanIndex).keys.toList().length,
+                  itemCount: musicPlayerListByLanguage(lanIndex).length,
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       child: Container(
@@ -90,14 +91,50 @@ class _MusicPlayerState extends State<MusicPlayer> {
                             Image.asset(
                               'assets/images/music_temp.jpg',
                             ),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width * 0.02,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  musicPlayerListByLanguage(lanIndex)
+                                      .keys
+                                      .toList()[index],
+                                  style: TextStyle(
+                                      fontFamily: 'Dosis',
+                                      color: Colors.black,
+                                      fontSize:
+                                          MediaQuery.of(context).size.height *
+                                              0.03),
+                                ),
+                                Text(
+                                  musicPlayerListByLanguage(lanIndex)
+                                      .keys
+                                      .toList()[index],
+                                  style: TextStyle(
+                                      fontFamily: 'Dosis',
+                                      color: Colors.black45,
+                                      fontSize:
+                                          MediaQuery.of(context).size.height *
+                                              0.025),
+                                ),
+                              ],
+                            ),
                           ],
                         ),
                       ),
                       onTap: () {
-                        setState(() {
-                          i = index;
-                          initState();
-                        });
+                        setState(
+                          () {
+                            currentMusic = index;
+                            _audioPlayer.setSourceUrl(
+                              musicPlayerListByLanguage(lanIndex)
+                                  .values
+                                  .toList()[index],
+                            );
+                          },
+                        );
                       },
                     );
                   },
@@ -127,7 +164,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
                   padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.05),
                   height: MediaQuery.of(context).size.height * 0.2,
-                  child: callMusicPlayer(i, lanIndex),
+                  child: callMusicPlayer(lanIndex),
                 ),
               ),
             ],
@@ -137,11 +174,10 @@ class _MusicPlayerState extends State<MusicPlayer> {
     );
   }
 
-  Widget callMusicPlayer(int i, int lanIndex) {
+  Widget callMusicPlayer(int lanIndex) {
     return MusicPlayerWidget(
       audioPlayer: _audioPlayer,
-      arr: callMusicPlayerByLanguage(lanIndex),
-      index: i,
+      arr: musicPlayerListByLanguage(lanIndex),
     );
   }
 }

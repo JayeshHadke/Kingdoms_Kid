@@ -1,48 +1,39 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
+import 'package:kingdoms_kids/utilities/referenceIndexPage..dart';
 
 class MusicPlayerWidget extends StatefulWidget {
   late Map<String, String> arr;
-  late int index;
   late AudioPlayer audioPlayer;
 
-  MusicPlayerWidget(
-      {Key? key, required this.audioPlayer, required this.arr, this.index = 0})
+  MusicPlayerWidget({Key? key, required this.audioPlayer, required this.arr})
       : super(key: key);
 
   @override
-  State<MusicPlayerWidget> createState() =>
-      _MusicPlayerWidgetState(audioPlayer: audioPlayer, arr: arr, index: index);
+  State<MusicPlayerWidget> createState() => _MusicPlayerWidgetState(arr: arr);
 }
 
 class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
   Map<String, String> arr;
-  int index;
-  int i = 0;
   final List<IconData> _icons = [
     Icons.play_arrow_rounded,
     Icons.pause_rounded,
   ];
-  late AudioPlayer audioPlayer;
   Duration _duration = Duration();
   Duration _position = Duration();
   var path;
   bool isLoop = false;
   bool isPlaying = false;
   _MusicPlayerWidgetState({
-    required this.audioPlayer,
     required this.arr,
-    required this.index,
   }) {
-    i = index;
-    path = arr.values.toList()[i];
+    path = arr.values.toList()[currentMusic];
   }
 
   @override
   void initState() {
     // TODO: implement initState
-    super.initState();
     widget.audioPlayer.onDurationChanged.listen(
       (event) {
         setState(
@@ -70,7 +61,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
         );
       },
     );
-    widget.audioPlayer.setSourceUrl(arr.values.toList()[i]);
+    widget.audioPlayer.setSourceUrl(arr.values.toList()[currentMusic]);
   }
 
   @override
@@ -79,7 +70,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          arr.keys.toList()[i],
+          arr.keys.toList()[currentMusic],
           style: TextStyle(
               fontFamily: 'Dosis',
               color: Colors.black,
@@ -106,7 +97,8 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
             setState(
               () {
                 if (!isPlaying) {
-                  widget.audioPlayer.play(UrlSource(arr.values.toList()[i]));
+                  widget.audioPlayer
+                      .play(UrlSource(arr.values.toList()[currentMusic]));
                   isPlaying = true;
                 }
                 widget.audioPlayer.seek(Duration(seconds: value.toInt()));
@@ -159,11 +151,13 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           onPressed: () {
             setState(
               () {
-                if (i > 0) i--;
+                if (currentMusic > 0) currentMusic--;
                 _position = Duration.zero;
-                widget.audioPlayer.setSourceUrl(arr.values.toList()[i]);
+                widget.audioPlayer
+                    .setSourceUrl(arr.values.toList()[currentMusic]);
                 if (isPlaying) {
-                  widget.audioPlayer.play(UrlSource(arr.values.toList()[i]));
+                  widget.audioPlayer
+                      .play(UrlSource(arr.values.toList()[currentMusic]));
                 }
               },
             );
@@ -207,7 +201,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
         },
       );
     } else if (!isPlaying) {
-      widget.audioPlayer.play(UrlSource(arr.values.toList()[i]));
+      widget.audioPlayer.play(UrlSource(arr.values.toList()[currentMusic]));
       setState(
         () {
           isPlaying = true;
@@ -219,11 +213,11 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
   void nextMusicButton() {
     setState(
       () {
-        if (i < arr.values.toList().length - 1) i++;
+        if (currentMusic < arr.values.toList().length - 1) currentMusic++;
         _position = Duration.zero;
-        widget.audioPlayer.setSourceUrl(arr.values.toList()[i]);
+        widget.audioPlayer.setSourceUrl(arr.values.toList()[currentMusic]);
         if (isPlaying) {
-          widget.audioPlayer.play(UrlSource(arr.values.toList()[i]));
+          widget.audioPlayer.play(UrlSource(arr.values.toList()[currentMusic]));
         }
       },
     );

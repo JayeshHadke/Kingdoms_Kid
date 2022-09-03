@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:kingdoms_kids/widgets/aboutUsPage.dart';
@@ -152,7 +151,7 @@ void Songs(BuildContext context) {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return ChoiceLanguageForSongs();
+          return const ChoiceLanguageForSongs();
         },
       ),
     );
@@ -591,7 +590,7 @@ class MusicNode {
   MusicNode(this.name, this.path);
 }
 
-Map<String, String> callMusicPlayerByLanguage(int index) {
+Map<String, String> musicPlayerListByLanguage(int index) {
   List<Map<String, String>> arr = [
     EnglishMusic,
     TamilMusic,
@@ -630,3 +629,34 @@ var MarathiMusic = {
   'Teri Deewani':
       'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
 };
+
+int currentMusic = 0;
+
+// Songs Section
+
+Map<String, String> songsPlayerListByLanguage(int index) {
+  List<Map<String, String>> arr = [
+    EnglishSong,
+    TamilSong,
+    TeluguSong,
+    HindiSong,
+    KannadaSong,
+    MarathiSong,
+  ];
+  return arr[index];
+}
+
+var EnglishSong = {
+  'Oggy': 'jATN1dx1j4E',
+  'Apple': 'FzcfZyEhOoI',
+  'z': '',
+  'a': '',
+  'b': '',
+  'c': '',
+  'd': '',
+};
+var TamilSong = {'': ''};
+var TeluguSong = {'': ''};
+var HindiSong = {'': ''};
+var KannadaSong = {'': ''};
+var MarathiSong = {'': ''};
