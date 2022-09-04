@@ -44,9 +44,11 @@ class _CounsellingPageState extends State<CounsellingPage> {
                   ),
                   child: TextField(
                     onChanged: (value) {
-                      setState(() {
-                        name = value;
-                      });
+                      setState(
+                        () {
+                          name = value;
+                        },
+                      );
                     },
                     keyboardType: TextInputType.name,
                     decoration: InputDecoration(
@@ -96,7 +98,7 @@ class _CounsellingPageState extends State<CounsellingPage> {
                 Row(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width * 0.5,
+                      width: MediaQuery.of(context).size.width * 0.45,
                       padding: EdgeInsets.only(
                           bottom: MediaQuery.of(context).size.height * 0.02),
                       child: TextField(
@@ -124,29 +126,41 @@ class _CounsellingPageState extends State<CounsellingPage> {
                       ),
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.04,
+                      width: MediaQuery.of(context).size.width * 0.02,
                     ),
                     SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.3,
+                      // width: MediaQuery.of(context).size.width * 0.34,
                       child: DropdownButton(
                         items: CounsellingTypes.map(
                           (CounsellingData items) {
                             return DropdownMenuItem<String>(
                               value: items.title,
-                              child: Tooltip(
-                                message: items.description,
-                                preferBelow: false,
-                                showDuration: const Duration(seconds: 2),
-                                waitDuration: const Duration(seconds: 1),
-                                child: Text(
-                                  items.title.toString(),
-                                  style: TextStyle(
-                                      fontFamily: 'Dosis',
-                                      color: Colors.black,
-                                      fontSize:
-                                          MediaQuery.of(context).size.width *
-                                              0.045),
-                                ),
+                              alignment: Alignment.center,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    items.title.toString(),
+                                    style: TextStyle(
+                                        fontFamily: 'Dosis',
+                                        color: Colors.black,
+                                        fontSize:
+                                            MediaQuery.of(context).size.width *
+                                                0.045),
+                                  ),
+                                  Tooltip(
+                                    message: items.description,
+                                    preferBelow: false,
+                                    showDuration: const Duration(seconds: 2),
+                                    waitDuration: const Duration(seconds: 1),
+                                    triggerMode: TooltipTriggerMode.longPress,
+                                    child: Icon(Icons.info_outline_rounded,
+                                        size:
+                                            MediaQuery.of(context).size.width *
+                                                0.06),
+                                  ),
+                                ],
                               ),
                             );
                           },
