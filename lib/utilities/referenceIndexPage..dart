@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:kingdoms_kids/widgets/aboutUsPage.dart';
+import 'package:kingdoms_kids/widgets/bookSlotPage.dart';
 import 'package:kingdoms_kids/widgets/choiceLanguageForMusic.dart';
 import 'package:kingdoms_kids/widgets/choiceLanguageForSongs.dart';
 import 'package:kingdoms_kids/widgets/counsellingPage.dart';
@@ -173,7 +174,14 @@ void Counselling(BuildContext context) {
   ));
 }
 
-void BookSlot(BuildContext context) {}
+void BookSlot(BuildContext context) {
+  Navigator.push(context, MaterialPageRoute(
+    builder: (context) {
+      return const BookSlotPage();
+    },
+  ));
+}
+
 void Store(BuildContext context) {
   Navigator.push(context, MaterialPageRoute(
     builder: (context) {
