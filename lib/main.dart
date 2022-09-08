@@ -24,23 +24,29 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  late bool logged;
+
+  _MyAppState() {
+    check().then((value) {
+      setState(() {
+        logged = value;
+        print('-------------------------------$logged---------------------');
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    // return check().then((value) {
-    //   return value;
-    // })
-    //     ? const LandingPage()
-    //     : const MainPage();
-    return LandingPage();
+    return logged ? const LandingPage() : const MainPage();
   }
 }
 
-Future<Widget> check() async {
+Future<bool> check() async {
   final p = await SharedPreferences.getInstance();
-  if (p.getInt('logged') == null || p.getInt('logged') == 0) {
-    await p.setInt('logged', 1);
-    return const LandingPage();
+  if (p.containsKey('logged')) {
+    return true;
   } else {
-    return const MainPage();
+    await p.setInt('logged', 1);
+    return false;
   }
 }
