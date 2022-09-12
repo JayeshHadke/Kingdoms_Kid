@@ -94,16 +94,25 @@ class _VideoPlayerState extends State<VideoPlayer> {
                           ),
                           Column(
                             children: [
-                              Text(
-                                songsPlayerListByLanguage(lanIndex)
-                                    .keys
-                                    .toList()[index],
-                                style: TextStyle(
-                                    fontFamily: 'Dosis',
-                                    color: Colors.black,
-                                    fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.028),
+                              SizedBox(
+                                height:
+                                    MediaQuery.of(context).size.height * 0.01,
+                              ),
+                              Wrap(
+                                children: [
+                                  Text(
+                                    songsPlayerListByLanguage(lanIndex)
+                                        .keys
+                                        .toList()[index],
+                                    softWrap: true,
+                                    style: TextStyle(
+                                        fontFamily: 'Dosis',
+                                        color: Colors.black,
+                                        fontSize:
+                                            MediaQuery.of(context).size.height *
+                                                0.02),
+                                  ),
+                                ],
                               ),
                             ],
                           )

@@ -47,13 +47,16 @@ class AboutUsPage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     fontFamily: 'Dosis'),
               ),
-              Text(
-                'ASSEMBLES OF GOD',
-                style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.width * 0.05,
-                    fontWeight: FontWeight.w500,
-                    fontFamily: 'Dosis'),
-              )
+              Flexible(
+                child: Text(
+                  textAlign: TextAlign.center,
+                  "All India Assembly of God Children Ministry Department exists to guide  kids into Spirit-empowered, whole-life transformation through regional leaders entrusted to help parents and leaders model and mentor God's message to children.",
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.width * 0.05,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: 'Dosis'),
+                ),
+              ),
             ],
           ),
         ),

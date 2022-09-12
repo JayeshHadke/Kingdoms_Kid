@@ -98,7 +98,7 @@ class _CounsellingPageState extends State<CounsellingPage> {
                 Row(
                   children: [
                     Container(
-                      width: MediaQuery.of(context).size.width * 0.45,
+                      width: MediaQuery.of(context).size.width * 0.4,
                       padding: EdgeInsets.only(
                           bottom: MediaQuery.of(context).size.height * 0.02),
                       child: TextField(
@@ -128,7 +128,7 @@ class _CounsellingPageState extends State<CounsellingPage> {
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.02,
                     ),
-                    SizedBox(
+                    Flexible(
                       // width: MediaQuery.of(context).size.width * 0.34,
                       child: DropdownButton(
                         items: CounsellingTypes.map(

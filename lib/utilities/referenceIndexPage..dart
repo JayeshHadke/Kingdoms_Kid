@@ -209,20 +209,14 @@ void Exit(BuildContext context) {
 // 3Years Curriculum
 
 var arr3YearsCurriculum = <String, String>{
-  'Validity Data':
-      'https://doc-04-4c-docs.googleusercontent.com/docs/securesc/8ishjs7hooo8lkqt9fmvbs11fccgo47v/k2b8j5et3vuv9vtev8vg6n0n2jlfb3gm/1663013100000/17947130613844246520/10876445644114682409/1ITliMPH7Hsc3HVFSPRjr0GczwuYu7Mf0?e=download&ax=AI9vYm6sxXycq85VpYbVIFqshrlemr34Nhsc0N-jZkxDYVWA1vLdRbEf0xW4CqpnQ_NiWnStNezaPkznNfesszLUrcXwO4zEdWNd2R-1LDniLwrP7u_snyEb4QiZPGOjZ2RGECl_vl749Uh05Fk4R-MXFOGOtW-9tYaWWesw_dScRBTaV7pZX-41D6p6uqvTGEKo2SFnGU5DxzVwMSLsyBpQ5fP7t4CqMG1zdwbopD6dSikkXKGrjfUQFrAVzUl0DfFT8vKWd1UuTL8QieumYGGU46g0XamTKJx65o03caWLcD7mJYqA5hpzjjEVrAZzfIKRB97NqtWeyc8S6qTzMJ3Le_l0zZ3eQ-MUAYTE0a_LZTDKtErxpeuEafeA7pO-W6YZqQ5YWrJGPPFAyhVwXT0AOwy0wTkGX8gaTB0x_yWB_tcI-JwEDZUaHQqfkPqx3-jtKWq5mtyONyqKoFinmvJ562oE2rw9FF4UH7b93ktdnAdJdx9oFl4_rDP1K4S4pP7RLhoKb8_WLCjo-Y775dtGgHeLUo6n1GAaVuQkjgTRsl2WIxgsK8ZN0h6lo7cIa7LUZCdBiWWjAikfjbxXRzxJS1ayAtP7NNC87zsw9l2Q7F72gwKW544ipQx3Qv224yhvjI9h6kguUJRXggixJ8axuk4NmakXaBeebU4h7Y8qZjlPAOC0OfqWYh3Ym-f3ohv3W1njc3Bi_8ncwe6CmiWBtRsoSc0ThnmKNw8j_jqDmmO11l29dmp-ecnTHO4nvzgAPviQQ8cdggYnjS4rlWUODyuTmGUH7ubZGP4E10PoYnnjRRM64mvdyyb0AlSD&uuid=508d498b-162f-42d3-8733-49d958f2b29e&authuser=0&nonce=ht5k1r07vcf82&user=10876445644114682409&hash=3si8ofhgsgplig3m5u27ljfrjen1lgfh',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String get3YearsCurriculumLink(int index) {
   return arr3YearsCurriculum.values.toList()[index];
@@ -237,20 +231,14 @@ String get3yearsCurriculumName(int index) {
 }
 
 var arrOutdoorCurriculum = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String getOutdoorCurriculumLink(int index) {
   return arrOutdoorCurriculum.values.toList()[index];
@@ -265,20 +253,14 @@ String getOutdoorCurriculumName(int index) {
 }
 
 var arrSeasonalCurriculum = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample 11 PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String getSeasonalCurriculumLink(int index) {
   return arrSeasonalCurriculum.values.toList()[index];
@@ -293,20 +275,14 @@ String getSeasonalCurriculumName(int index) {
 }
 
 var arrVBSCurriculum = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String getVBSCurriculumLink(int index) {
   return arrVBSCurriculum.values.toList()[index];
@@ -323,88 +299,58 @@ String getVBSCurriculumName(int index) {
 // Resource Section
 // Objective Lessons
 var arrObjectiveLesson = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Craft
 var arrCraft = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Experiments
 var arrExperiments = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Games
 var arrGames = <String, String>{
-  'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Skit Script
 var arrSkitScript = <String, String>{
-  'Validity SS Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
-  'Sample PDF':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
-  'Sample PDF 1':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_1.73Mb_87_Page.pdf',
-  'Sample PDF 2':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SAMPLE_42mb_76_Pages.pdf',
-  'Sample PDF 3':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_477kb_1page.pdf',
-  'Sample PDF 4':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_74kb_2_page.pdf',
-  'Sample PDF 5':
-      'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf_61kb_1page.pdf'
+  '1 Students - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  '1 Teachers - CDSIAG Kannada':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  'CFI-ENGLISH 4 Student':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  'CFI-ENGLISH 4 Teachers':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 
 enum ResourceTypes {
@@ -671,24 +617,122 @@ Map<String, String> songsPlayerListByLanguage(int index) {
 }
 
 var EnglishSong = {
-  'Oggy': 'jATN1dx1j4E',
-  'Apple': 'FzcfZyEhOoI',
-  'Oggy Returns': YoutubePlayer.convertUrlToId(
-          'https://www.youtube.com/watch?v=C5UQIuStwVY')
+  'OFF TRAIL VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=fmaD0dNC2gI')
       .toString(),
-  'Alaska': 'CHSnz0bCaUk',
-  'Lofi': YoutubePlayer.convertUrlToId(
-          'https://www.youtube.com/watch?v=yndhGWbxd0w')
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=4DUBXJuDscg')
       .toString(),
-  'Time Management': YoutubePlayer.convertUrlToId(
-          'https://www.youtube.com/watch?v=vL2aMjFS3sI')
+  'FUNSTRUCTED ME VBS ': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=hN0R1twAiME')
       .toString(),
-  'Tree DS': YoutubePlayer.convertUrlToId(
-          'https://www.youtube.com/watch?v=S2W3SXGPVyU')
+  'Jump into the Light': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=xVGORBCdh5A')
+      .toString(),
+  'NOTHING IS IMPOSSIBLE': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=b5FJLlT5EiU')
+      .toString(),
+  'Chinna chittu kuruviye': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=rTmDcwNtn9I')
       .toString(),
 };
-var TamilSong = {'': ''};
-var TeluguSong = {'': ''};
-var HindiSong = {'': ''};
-var KannadaSong = {'': ''};
-var MarathiSong = {'': ''};
+var TamilSong = {
+  'OFF TRAIL VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=fmaD0dNC2gI')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=4DUBXJuDscg')
+      .toString(),
+  'FUNSTRUCTED ME VBS ': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=hN0R1twAiME')
+      .toString(),
+  'Jump into the Light': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=xVGORBCdh5A')
+      .toString(),
+  'NOTHING IS IMPOSSIBLE': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=b5FJLlT5EiU')
+      .toString(),
+  'Chinna chittu kuruviye': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=rTmDcwNtn9I')
+      .toString(),
+};
+var TeluguSong = {
+  'OFF TRAIL VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=fmaD0dNC2gI')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=4DUBXJuDscg')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=hN0R1twAiME')
+      .toString(),
+  'Jump into the Light': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=xVGORBCdh5A')
+      .toString(),
+  'NOTHING IS IMPOSSIBLE': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=b5FJLlT5EiU')
+      .toString(),
+  'Chinna chittu kuruviye': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=rTmDcwNtn9I')
+      .toString(),
+};
+var HindiSong = {
+  'OFF TRAIL VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=fmaD0dNC2gI')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=4DUBXJuDscg')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=hN0R1twAiME')
+      .toString(),
+  'Jump into the Light': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=xVGORBCdh5A')
+      .toString(),
+  'NOTHING IS IMPOSSIBLE': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=b5FJLlT5EiU')
+      .toString(),
+  'Chinna chittu kuruviye': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=rTmDcwNtn9I')
+      .toString(),
+};
+var KannadaSong = {
+  'OFF TRAIL VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=fmaD0dNC2gI')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=4DUBXJuDscg')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=hN0R1twAiME')
+      .toString(),
+  'Jump into the Light': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=xVGORBCdh5A')
+      .toString(),
+  'NOTHING IS IMPOSSIBLE': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=b5FJLlT5EiU')
+      .toString(),
+  'Chinna chittu kuruviye': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=rTmDcwNtn9I')
+      .toString(),
+};
+var MarathiSong = {
+  'OFF TRAIL VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=fmaD0dNC2gI')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=4DUBXJuDscg')
+      .toString(),
+  'FUNSTRUCTED ME VBS': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=hN0R1twAiME')
+      .toString(),
+  'Jump into the Light': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=xVGORBCdh5A')
+      .toString(),
+  'NOTHING IS IMPOSSIBLE': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=b5FJLlT5EiU')
+      .toString(),
+  'Chinna chittu kuruviye': YoutubePlayer.convertUrlToId(
+          'https://www.youtube.com/watch?v=rTmDcwNtn9I')
+      .toString(),
+};
