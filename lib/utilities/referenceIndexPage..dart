@@ -210,7 +210,7 @@ void Exit(BuildContext context) {
 
 var arr3YearsCurriculum = <String, String>{
   'Validity Data':
-      'https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf',
+      'https://doc-04-4c-docs.googleusercontent.com/docs/securesc/8ishjs7hooo8lkqt9fmvbs11fccgo47v/k2b8j5et3vuv9vtev8vg6n0n2jlfb3gm/1663013100000/17947130613844246520/10876445644114682409/1ITliMPH7Hsc3HVFSPRjr0GczwuYu7Mf0?e=download&ax=AI9vYm6sxXycq85VpYbVIFqshrlemr34Nhsc0N-jZkxDYVWA1vLdRbEf0xW4CqpnQ_NiWnStNezaPkznNfesszLUrcXwO4zEdWNd2R-1LDniLwrP7u_snyEb4QiZPGOjZ2RGECl_vl749Uh05Fk4R-MXFOGOtW-9tYaWWesw_dScRBTaV7pZX-41D6p6uqvTGEKo2SFnGU5DxzVwMSLsyBpQ5fP7t4CqMG1zdwbopD6dSikkXKGrjfUQFrAVzUl0DfFT8vKWd1UuTL8QieumYGGU46g0XamTKJx65o03caWLcD7mJYqA5hpzjjEVrAZzfIKRB97NqtWeyc8S6qTzMJ3Le_l0zZ3eQ-MUAYTE0a_LZTDKtErxpeuEafeA7pO-W6YZqQ5YWrJGPPFAyhVwXT0AOwy0wTkGX8gaTB0x_yWB_tcI-JwEDZUaHQqfkPqx3-jtKWq5mtyONyqKoFinmvJ562oE2rw9FF4UH7b93ktdnAdJdx9oFl4_rDP1K4S4pP7RLhoKb8_WLCjo-Y775dtGgHeLUo6n1GAaVuQkjgTRsl2WIxgsK8ZN0h6lo7cIa7LUZCdBiWWjAikfjbxXRzxJS1ayAtP7NNC87zsw9l2Q7F72gwKW544ipQx3Qv224yhvjI9h6kguUJRXggixJ8axuk4NmakXaBeebU4h7Y8qZjlPAOC0OfqWYh3Ym-f3ohv3W1njc3Bi_8ncwe6CmiWBtRsoSc0ThnmKNw8j_jqDmmO11l29dmp-ecnTHO4nvzgAPviQQ8cdggYnjS4rlWUODyuTmGUH7ubZGP4E10PoYnnjRRM64mvdyyb0AlSD&uuid=508d498b-162f-42d3-8733-49d958f2b29e&authuser=0&nonce=ht5k1r07vcf82&user=10876445644114682409&hash=3si8ofhgsgplig3m5u27ljfrjen1lgfh',
   'Sample PDF':
       'https://www.appsloveworld.com/wp-content/uploads/2020/01/SamplePdf1_12mb_6pages.pdf',
   'Sample PDF 1':
