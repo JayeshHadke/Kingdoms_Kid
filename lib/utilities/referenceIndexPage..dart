@@ -573,31 +573,88 @@ Map<String, String> musicPlayerListByLanguage(int index) {
 }
 
 var EnglishMusic = {
-  'Barish':
-      'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
-  'Ganpati Bappa': 'https://pwdown.com/11245/Sukh%20Karta%20Dukh%20Harta.mp3',
-  'Shankar Ji ka Beta':
-      "https://pwdown.com/11245/Shankar%20Ji%20Ka%20Beta%20Gaadi%20Me%20Baita.mp3",
+  'BEYOND THE YONDER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+  'CELEBRATE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+  'COUNT ON JESUS':
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+  'I AM AN EXPLORER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+  'I NEED A RESCUE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+  'WAIT ON THE LORD':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var TamilMusic = {
-  'Teri Deewani':
-      'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
+  'BEYOND THE YONDER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+  'CELEBRATE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+  'COUNT ON JESUS':
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+  'I AM AN EXPLORER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+  'I NEED A RESCUE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+  'WAIT ON THE LORD':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var TeluguMusic = {
-  'Teri Deewani':
-      'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
+  'BEYOND THE YONDER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+  'CELEBRATE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+  'COUNT ON JESUS':
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+  'I AM AN EXPLORER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+  'I NEED A RESCUE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+  'WAIT ON THE LORD':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var HindiMusic = {
-  'Teri Deewani':
-      'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
+  'BEYOND THE YONDER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+  'CELEBRATE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+  'COUNT ON JESUS':
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+  'I AM AN EXPLORER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+  'I NEED A RESCUE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+  'WAIT ON THE LORD':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var KannadaMusic = {
-  'Teri Deewani':
-      'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
+  'BEYOND THE YONDER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+  'CELEBRATE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+  'COUNT ON JESUS':
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+  'I AM AN EXPLORER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+  'I NEED A RESCUE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+  'WAIT ON THE LORD':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var MarathiMusic = {
-  'Teri Deewani':
-      'https://pwdown.com/12055/12%20Baarish%20-%20Atif%20Aslam%20(Half%20Girlfriend)%20190Kbps.mp3',
+  'BEYOND THE YONDER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+  'CELEBRATE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+  'COUNT ON JESUS':
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+  'I AM AN EXPLORER':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+  'I NEED A RESCUE':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+  'WAIT ON THE LORD':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 
 int currentMusic = 0;
