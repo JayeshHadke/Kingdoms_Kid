@@ -14,16 +14,16 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 //  Slider Section
 var arrSliderHeading = [
   'Stay Connected...',
-  'Songs...',
+  'Songs & Music..',
   "Get Resources...",
   'Stay Stress Free...',
   'Book Slots...'
 ];
 var arrSliderBody = [
-  'Get Out Best Curriculum\nand Stay Always Connected\nto GOD.',
-  'Get Latest Video and\nMusic Songs along\nwith Lyrics, Chords\nand Many More.',
-  "Get All Resources of\nOurs, Like Story Books,\nWork Books and Many\nMore.",
-  'Get 1X1 Best Counsellors\nfor Any Life Challenging\nProblem.',
+  'Choice From Range of\nCurriculum and Always Stay\nConnected to God.',
+  'Get Latest Kids Songs\n& Sing along with Karaoke.',
+  "Craft, Experiment, Puppet\nScripts, Skit & Much More.",
+  'Talk 1 X 1 Best Counsellors\n for any of Life Challenges.',
   "Book Slots for All\nUpcoming Offline Resource's\nin Just One Click."
 ];
 var arrSliderImages = [
@@ -210,13 +210,14 @@ void Exit(BuildContext context) {
 
 var arr3YearsCurriculum = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+  'Sample': 'https://www.africau.edu/images/default/sample.pdf'
 };
 String get3YearsCurriculumLink(int index) {
   return arr3YearsCurriculum.values.toList()[index];
@@ -232,13 +233,13 @@ String get3yearsCurriculumName(int index) {
 
 var arrOutdoorCurriculum = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String getOutdoorCurriculumLink(int index) {
   return arrOutdoorCurriculum.values.toList()[index];
@@ -254,13 +255,13 @@ String getOutdoorCurriculumName(int index) {
 
 var arrSeasonalCurriculum = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String getSeasonalCurriculumLink(int index) {
   return arrSeasonalCurriculum.values.toList()[index];
@@ -276,13 +277,13 @@ String getSeasonalCurriculumName(int index) {
 
 var arrVBSCurriculum = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 String getVBSCurriculumLink(int index) {
   return arrVBSCurriculum.values.toList()[index];
@@ -300,57 +301,58 @@ String getVBSCurriculumName(int index) {
 // Objective Lessons
 var arrObjectiveLesson = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+  'Sample': 'https://www.africau.edu/images/default/sample.pdf'
 };
 // Craft
 var arrCraft = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Experiments
 var arrExperiments = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Games
 var arrGames = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 // Skit Script
 var arrSkitScript = <String, String>{
   '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
   '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
   'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
   'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 
 enum ResourceTypes {
@@ -443,88 +445,11 @@ class StoreDetails {
 
 var arrStore = [
   StoreDetails(
-    name: 'Om Sai',
+    name: 'Olive',
     address: 'Bengaluru',
     imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Bhagwati Store',
-    address: 'Kolkata',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "9023119922",
-  ),
-  StoreDetails(
-    name: 'Sonic Store',
-    address: 'Maharashtra',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "9089786756",
-  ),
-  StoreDetails(
-    name: 'Maruti Store',
-    address: 'Delhi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "9342689564",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Bakrey',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2019/08/22/15/46/icon-4423853_960_720.png',
-    phoneNo: "123456789",
-  ),
-  StoreDetails(
-    name: 'Hello',
-    address: 'Hi',
-    imgPath:
-        'https://cdn.pixabay.com/photo/2014/04/03/00/42/house-309156_960_720.png',
-    phoneNo: "123456789",
+        'Bangalore/The-Olive-Book-Shop-Opposite-To-FGAG-Church-Indiranagar/080PXX80-XX80-151105110326-Z8V7_BZDET',
+    phoneNo: "9980413610",
   ),
 ];
 
@@ -574,87 +499,87 @@ Map<String, String> musicPlayerListByLanguage(int index) {
 
 var EnglishMusic = {
   'BEYOND THE YONDER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/BEYOND%20THE%20YONDER.mp3',
   'CELEBRATE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/CELEBRATE.mp3',
   'COUNT ON JESUS':
-      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/COUNT%20ON%20JESUS.mp3",
   'I AM AN EXPLORER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20AM%20AN%20EXPLORER.mp3',
   'I NEED A RESCUE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20NEED%20A%20RESCUE.mp3',
   'WAIT ON THE LORD':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var TamilMusic = {
   'BEYOND THE YONDER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/BEYOND%20THE%20YONDER.mp3',
   'CELEBRATE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/CELEBRATE.mp3',
   'COUNT ON JESUS':
-      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/COUNT%20ON%20JESUS.mp3",
   'I AM AN EXPLORER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20AM%20AN%20EXPLORER.mp3',
   'I NEED A RESCUE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20NEED%20A%20RESCUE.mp3',
   'WAIT ON THE LORD':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var TeluguMusic = {
   'BEYOND THE YONDER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/BEYOND%20THE%20YONDER.mp3',
   'CELEBRATE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/CELEBRATE.mp3',
   'COUNT ON JESUS':
-      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/COUNT%20ON%20JESUS.mp3",
   'I AM AN EXPLORER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20AM%20AN%20EXPLORER.mp3',
   'I NEED A RESCUE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20NEED%20A%20RESCUE.mp3',
   'WAIT ON THE LORD':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var HindiMusic = {
   'BEYOND THE YONDER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/BEYOND%20THE%20YONDER.mp3',
   'CELEBRATE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/CELEBRATE.mp3',
   'COUNT ON JESUS':
-      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/COUNT%20ON%20JESUS.mp3",
   'I AM AN EXPLORER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20AM%20AN%20EXPLORER.mp3',
   'I NEED A RESCUE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20NEED%20A%20RESCUE.mp3',
   'WAIT ON THE LORD':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var KannadaMusic = {
   'BEYOND THE YONDER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/BEYOND%20THE%20YONDER.mp3',
   'CELEBRATE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/CELEBRATE.mp3',
   'COUNT ON JESUS':
-      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/COUNT%20ON%20JESUS.mp3",
   'I AM AN EXPLORER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20AM%20AN%20EXPLORER.mp3',
   'I NEED A RESCUE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20NEED%20A%20RESCUE.mp3',
   'WAIT ON THE LORD':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 var MarathiMusic = {
   'BEYOND THE YONDER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/BEYOND%20THE%20YONDER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/BEYOND%20THE%20YONDER.mp3',
   'CELEBRATE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/CELEBRATE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/CELEBRATE.mp3',
   'COUNT ON JESUS':
-      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/COUNT%20ON%20JESUS.mp3",
+      "https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/COUNT%20ON%20JESUS.mp3",
   'I AM AN EXPLORER':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20AM%20AN%20EXPLORER.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20AM%20AN%20EXPLORER.mp3',
   'I NEED A RESCUE':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/I%20NEED%20A%20RESCUE.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/I%20NEED%20A%20RESCUE.mp3',
   'WAIT ON THE LORD':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/audio/WAIT%20ON%20THE%20LORD.mp3',
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/audio/WAIT%20ON%20THE%20LORD.mp3',
 };
 
 int currentMusic = 0;

@@ -71,10 +71,8 @@ class _PDFViewerPageState extends State<PDFViewerPage> {
               ? CircularProgressIndicator(
                   color: mainColor,
                 )
-              : Expanded(
-                  child: PdfView(
-                    path: pdfFilePath!,
-                  ),
+              : PdfView(
+                  path: pdfFilePath!,
                 ),
         ),
       ),

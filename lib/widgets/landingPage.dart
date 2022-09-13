@@ -18,68 +18,65 @@ class _LandingPageState extends State<LandingPage> {
           builder: (context, orientation) {
             if (orientation == Orientation.portrait) {
               return SingleChildScrollView(
-                child: Expanded(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.12,
-                      ),
-                      Image.asset('assets/images/landing_poster.png'),
-                      Text(
-                        'WELCOME',
-                        style: TextStyle(
-                            fontFamily: 'Dosis',
-                            fontSize: MediaQuery.of(context).size.width * 0.15),
-                      ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.1,
-                      ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.06,
-                        width: MediaQuery.of(context).size.width * 0.8,
-                        child: OutlinedButton(
-                          style: ButtonStyle(
-                            shape: MaterialStateProperty.all(
-                              RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(
-                                  MediaQuery.of(context).size.width * 0.03,
-                                ),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.12,
+                    ),
+                    Image.asset('assets/images/landing_poster.png'),
+                    Text(
+                      'WELCOME',
+                      style: TextStyle(
+                          fontFamily: 'Dosis',
+                          fontSize: MediaQuery.of(context).size.width * 0.15),
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.1,
+                    ),
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.06,
+                      width: MediaQuery.of(context).size.width * 0.8,
+                      child: OutlinedButton(
+                        style: ButtonStyle(
+                          shape: MaterialStateProperty.all(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(
+                                MediaQuery.of(context).size.width * 0.03,
                               ),
-                            ),
-                            backgroundColor: MaterialStateProperty.resolveWith(
-                              (states) {
-                                if (states.contains(MaterialState.pressed)) {
-                                  return subColor;
-                                } else {
-                                  return mainColor;
-                                }
-                              },
                             ),
                           ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return const MainPage();
-                                },
-                              ),
-                            );
-                          },
-                          child: Text(
-                            "GET STARTED",
-                            style: TextStyle(
-                              fontFamily: 'Dosis',
-                              fontSize:
-                                  MediaQuery.of(context).size.width * 0.07,
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
+                          backgroundColor: MaterialStateProperty.resolveWith(
+                            (states) {
+                              if (states.contains(MaterialState.pressed)) {
+                                return subColor;
+                              } else {
+                                return mainColor;
+                              }
+                            },
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return const MainPage();
+                              },
                             ),
+                          );
+                        },
+                        child: Text(
+                          "GET STARTED",
+                          style: TextStyle(
+                            fontFamily: 'Dosis',
+                            fontSize: MediaQuery.of(context).size.width * 0.07,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               );
             } else {

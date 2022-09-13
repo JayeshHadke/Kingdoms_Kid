@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:kingdoms_kids/utilities/colors.dart';
 import 'package:kingdoms_kids/widgets/customSliders.dart';
 
 import 'mainPageTail.dart';
@@ -27,10 +28,11 @@ class _MainPageState extends State<MainPage> {
             leading: Container(),
             centerTitle: true,
             title: Text(
-              "Kingdom's Kids",
+              "Kingdom Kids",
               style: TextStyle(
-                  fontSize: MediaQuery.of(context).size.height * 0.04,
-                  color: Colors.black,
+                  fontWeight: FontWeight.w700,
+                  fontSize: MediaQuery.of(context).size.height * 0.05,
+                  color: Colors.green,
                   fontFamily: 'Dosis'),
             ),
           ),
@@ -38,64 +40,92 @@ class _MainPageState extends State<MainPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  SizedBox(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        opacity: 0.5,
+                        alignment: Alignment.topRight,
+                        fit: BoxFit.scaleDown,
+                        image: AssetImage(
+                          'assets/images/background.png',
+                        ),
+                      ),
+                    ),
+                    child: Column(
                       children: [
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: MediaQuery.of(context).size.width * 0.08),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        SizedBox(
+                          child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CircleAvatar(
-                                backgroundImage: const AssetImage(
-                                    'assets/images/poster.png'),
-                                backgroundColor: Colors.black12,
-                                radius:
-                                    MediaQuery.of(context).size.width * 0.08,
+                              Padding(
+                                padding: EdgeInsets.only(
+                                    left: MediaQuery.of(context).size.width *
+                                        0.08),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    CircleAvatar(
+                                      backgroundImage: const AssetImage(
+                                          'assets/images/Kingdom Kids.gif'),
+                                      backgroundColor: Colors.black12,
+                                      radius:
+                                          MediaQuery.of(context).size.width *
+                                              0.1,
+                                    ),
+                                    SizedBox(
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.03,
+                                    ),
+                                    Text(
+                                      "Welcome Children",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontFamily: 'Dosis',
+                                          color: Colors.black,
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.06),
+                                    ),
+                                    Wrap(
+                                      children: [
+                                        Text(
+                                          'And Sunday School Teachers',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.w500,
+                                              fontFamily: 'Dosis',
+                                              color: Colors.black,
+                                              fontSize: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  0.06),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-                              SizedBox(
-                                height:
-                                    MediaQuery.of(context).size.height * 0.03,
-                              ),
-                              Text(
-                                'Praise',
-                                style: TextStyle(
-                                    fontFamily: 'Dosis',
-                                    color: Colors.black,
-                                    fontSize:
-                                        MediaQuery.of(context).size.width *
-                                            0.08),
-                              ),
-                              Text(
-                                'The God...',
-                                style: TextStyle(
-                                    fontFamily: 'Dosis',
-                                    color: Colors.black,
-                                    fontSize:
-                                        MediaQuery.of(context).size.width *
-                                            0.09),
-                              ),
+                              // SizedBox(
+                              //   width: MediaQuery.of(context).size.width * 0.55,
+                              //   child: const Image(
+                              //     image:
+                              //         AssetImage('assets/images/background.png'),
+                              //   ),
+                              // ),
                             ],
                           ),
                         ),
                         SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.55,
-                          child: const Image(
-                            image: AssetImage('assets/images/background.png'),
-                          ),
+                          height: MediaQuery.of(context).size.height * 0.04,
                         ),
                       ],
                     ),
-                  ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.04,
                   ),
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.2,
