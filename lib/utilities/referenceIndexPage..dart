@@ -129,41 +129,41 @@ void Resources(BuildContext context) {
 }
 
 void Music(BuildContext context) {
-  if (selectedLanguage == -1) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) {
-          return ChoiceLanguageForMusic();
-        },
-      ),
-    );
-  } else {
-    Navigator.pushNamed(
-      context,
-      'musicPlayer',
-      arguments: passedArguments(index: selectedLanguage),
-    );
-  }
+  // if (selectedLanguage == -1) {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) {
+        return ChoiceLanguageForMusic();
+      },
+    ),
+  );
+  // } else {
+  //   Navigator.pushNamed(
+  //     context,
+  //     'musicPlayer',
+  //     arguments: passedArguments(index: selectedLanguage),
+  //   );
+  // }
 }
 
 void Songs(BuildContext context) {
-  if (selectedLanguage == -1) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) {
-          return const ChoiceLanguageForSongs();
-        },
-      ),
-    );
-  } else {
-    Navigator.pushNamed(
-      context,
-      'videoPlayer',
-      arguments: passedArguments(index: selectedLanguage),
-    );
-  }
+  // if (selectedLanguage == -1) {
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) {
+        return const ChoiceLanguageForSongs();
+      },
+    ),
+  );
+  // } else {
+  //   Navigator.pushNamed(
+  //     context,
+  //     'videoPlayer',
+  //     arguments: passedArguments(index: selectedLanguage),
+  //   );
+  // }
 }
 
 void Counselling(BuildContext context) {
@@ -312,14 +312,10 @@ var arrObjectiveLesson = <String, String>{
 };
 // Craft
 var arrCraft = <String, String>{
-  '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
-  '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
-  'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
-  'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+  'WeHaveKids':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/WeHaveKids.pdf',
+  'Bible Craft Ideas for Kids':
+      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/Bible%20Craft%20Ideas%20for%20Kids.pdf',
 };
 // Experiments
 var arrExperiments = <String, String>{
@@ -446,9 +442,10 @@ class StoreDetails {
 var arrStore = [
   StoreDetails(
     name: 'Olive',
-    address: 'Bengaluru',
-    imgPath:
+    address:
         'Bangalore/The-Olive-Book-Shop-Opposite-To-FGAG-Church-Indiranagar/080PXX80-XX80-151105110326-Z8V7_BZDET',
+    imgPath:
+        'https://pixabay.com/get/gab9e5fb946f299958ae9e4458422f2e91c112c9d4cdce3fa6ef3ee620cec052ef4517a4bd250d97829cc801695625a8ce6d6c5c57c22ec99dc05bcc8526410f89c5116eff45339ad5effced436ef40d0_1280.png?attachment=',
     phoneNo: "9980413610",
   ),
 ];
@@ -463,6 +460,7 @@ var LanguageTypes = <String>[
   'Kannada',
   'Marathi',
 ];
+
 var LanguageImage = <String>[
   'assets/images/English.png',
   'assets/images/Tamil.png',

@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
 import 'package:kingdoms_kids/utilities/referenceIndexPage..dart';
 import 'package:kingdoms_kids/widgets/pdfViewerPage.dart';
@@ -15,6 +16,8 @@ class CurriculumPage extends StatefulWidget {
 class _CurriculumPageState extends State<CurriculumPage> {
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
       onWillPop: () {
         Navigator.pop(context);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
 
 class BookSlotPage extends StatefulWidget {
@@ -11,6 +12,8 @@ class BookSlotPage extends StatefulWidget {
 class _BookSlotPageState extends State<BookSlotPage> {
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(

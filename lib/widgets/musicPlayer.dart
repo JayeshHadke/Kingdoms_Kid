@@ -1,5 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
 import 'package:kingdoms_kids/utilities/referenceIndexPage..dart';
 import 'package:kingdoms_kids/widgets/musicPlayerWidget.dart';
@@ -30,6 +31,8 @@ class _MusicPlayerState extends State<MusicPlayer> {
 
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     final val = ModalRoute.of(context)!.settings.arguments as passedArguments;
     int lanIndex = val.index;
     return WillPopScope(
@@ -59,7 +62,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
                 top: 0,
                 left: 0,
                 right: 0,
-                height: MediaQuery.of(context).size.height * 0.74,
+                height: MediaQuery.of(context).size.height * 0.7,
                 child: ListView.builder(
                   scrollDirection: Axis.vertical,
                   itemCount: musicPlayerListByLanguage(lanIndex).length,

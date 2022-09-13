@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
 import 'package:kingdoms_kids/utilities/referenceIndexPage..dart';
 
@@ -14,6 +15,8 @@ class _CounsellingPageState extends State<CounsellingPage> {
   String name = "", email = "", phoneNo = "";
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
       onWillPop: () {
         Navigator.pop(context);

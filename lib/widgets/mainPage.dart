@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:kingdoms_kids/utilities/colors.dart';
+import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/widgets/customSliders.dart';
 
 import 'mainPageTail.dart';
@@ -16,6 +16,8 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return WillPopScope(
       onWillPop: () {
         exit(0);

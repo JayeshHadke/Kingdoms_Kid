@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
 import 'package:kingdoms_kids/utilities/referenceIndexPage..dart';
 import 'package:kingdoms_kids/widgets/musicPlayer.dart';
@@ -18,6 +19,8 @@ class _ChoiceLanguageForMusic extends State<ChoiceLanguageForMusic> {
 
   @override
   Widget build(BuildContext context) {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return Scaffold(
       backgroundColor: subColor,
       body: Column(
