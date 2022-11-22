@@ -13,14 +13,14 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 //  Slider Section
 var arrSliderHeading = [
-  'Stay Connected...',
+  'Training Material...',
   'Songs & Music..',
   "Get Resources...",
   'Stay Stress Free...',
   'Book Slots...'
 ];
 var arrSliderBody = [
-  'Choice From Range of\nCurriculum and Always Stay\nConnected to God.',
+  'The curriculum  is designed for interaction &\nDiscussion, keeping the focus on Students.\nThe teacher will be a guide to facilitate\ntheir self learning process.',
   'Get Latest Kids Songs\n& Sing along with Karaoke.',
   "Craft, Experiment, Puppet\nScripts, Skit & Much More.",
   'Talk 1 X 1 Best Counsellors\n for any of Life Challenges.',
@@ -33,6 +33,7 @@ var arrSliderImages = [
   'assets/images/book_a_slot.png',
   'assets/images/book_slot.png',
 ];
+
 String getSliderHeading(int index) {
   return arrSliderHeading[index];
 }
@@ -72,7 +73,7 @@ var arrTailImages = [
 var arrTailText = [
   'Curriculum',
   'Resources',
-  'Music',
+  'Sing Along',
   'Songs',
   'Counselling',
   'Book Slot',
@@ -80,6 +81,7 @@ var arrTailText = [
   'About Us',
   'Exit'
 ];
+
 String getTailImage(int index) {
   return arrTailImages[index];
 }
@@ -219,6 +221,7 @@ var arr3YearsCurriculum = <String, String>{
       'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
   'Sample': 'https://www.africau.edu/images/default/sample.pdf'
 };
+
 String get3YearsCurriculumLink(int index) {
   return arr3YearsCurriculum.values.toList()[index];
 }
@@ -241,6 +244,7 @@ var arrOutdoorCurriculum = <String, String>{
   'CFI-ENGLISH 4 Teachers':
       'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
+
 String getOutdoorCurriculumLink(int index) {
   return arrOutdoorCurriculum.values.toList()[index];
 }
@@ -263,6 +267,7 @@ var arrSeasonalCurriculum = <String, String>{
   'CFI-ENGLISH 4 Teachers':
       'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
+
 String getSeasonalCurriculumLink(int index) {
   return arrSeasonalCurriculum.values.toList()[index];
 }
@@ -285,6 +290,7 @@ var arrVBSCurriculum = <String, String>{
   'CFI-ENGLISH 4 Teachers':
       'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
+
 String getVBSCurriculumLink(int index) {
   return arrVBSCurriculum.values.toList()[index];
 }
@@ -425,12 +431,14 @@ var CounsellingTypes = <CounsellingData>[
 class CounsellingData {
   String? title;
   String? description;
+
   CounsellingData({required this.title, required this.description});
 }
 
 // Store Content
 class StoreDetails {
   var name, address, imgPath, phoneNo;
+
   StoreDetails({
     required this.name,
     required this.address,
@@ -473,6 +481,7 @@ var LanguageImage = <String>[
 
 class passedArguments {
   late int index;
+
   passedArguments({required this.index});
 }
 
@@ -480,6 +489,7 @@ class passedArguments {
 class MusicNode {
   String name;
   String path;
+
   MusicNode(this.name, this.path);
 }
 
@@ -716,3 +726,17 @@ var MarathiSong = {
           'https://www.youtube.com/watch?v=rTmDcwNtn9I')
       .toString(),
 };
+
+var bookSlotList = [
+  'Sport leadership training',
+  'Magic show',
+  'Puppet show',
+  'Teachers training'
+];
+
+var slotImages = const [
+  'assets/images/sports_leardership_training.jpeg',
+  'assets/images/magic_show.jpeg',
+  'assets/images/puppet_show.jpeg',
+  'assets/images/teachers_training.jpeg',
+];

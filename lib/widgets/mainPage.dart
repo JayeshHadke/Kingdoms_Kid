@@ -30,7 +30,7 @@ class _MainPageState extends State<MainPage> {
             leading: Container(),
             centerTitle: true,
             title: Text(
-              "Kingdom Kids",
+              "AG KidZ",
               style: TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: MediaQuery.of(context).size.height * 0.05,
@@ -130,7 +130,7 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
+                    height: MediaQuery.of(context).size.height * 0.22,
                     width: double.maxFinite,
                     child: const CustomSlider(),
                   ),

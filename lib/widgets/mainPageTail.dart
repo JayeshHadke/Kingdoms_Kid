@@ -4,6 +4,7 @@ import 'package:kingdoms_kids/utilities/referenceIndexPage..dart';
 
 class MainPageTail extends StatelessWidget {
   int index;
+
   MainPageTail({Key? key, required this.index}) : super(key: key);
 
   @override
@@ -30,7 +31,7 @@ class MainPageTail extends StatelessWidget {
         ],
         color: Colors.white,
       ),
-      height: MediaQuery.of(context).size.height * 0.15,
+      height: MediaQuery.of(context).size.height * 0.19,
       width: MediaQuery.of(context).size.width * 0.35,
       child: TextButton(
         onPressed: () {

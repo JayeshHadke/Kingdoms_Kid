@@ -10,7 +10,8 @@ class CustomSlider extends StatefulWidget {
 }
 
 class _CustomSliderState extends State<CustomSlider> {
-  PageController pageController = PageController(viewportFraction: 0.89);
+  PageController pageController = PageController(viewportFraction: 0.92);
+
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
@@ -36,11 +37,11 @@ class _CustomSliderState extends State<CustomSlider> {
               offset: Offset(-1, 0),
               blurRadius: 4,
             ),
-            BoxShadow(
-              color: Colors.white,
-              offset: Offset(0, -4),
-              blurRadius: 4,
-            ),
+            // BoxShadow(
+            //   color: Colors.white,
+            //   offset: Offset(0, -4),
+            //   blurRadius: 4,
+            // ),
           ],
           color: mainColor,
           borderRadius:

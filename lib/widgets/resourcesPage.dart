@@ -13,6 +13,7 @@ class ResourcesPage extends StatefulWidget {
 
 class _ResourcesPageState extends State<ResourcesPage> {
   ResourceTypes res = ResourceTypes.Objective_Lesson;
+
   @override
   Widget build(BuildContext context) {
     WidgetsFlutterBinding.ensureInitialized();
@@ -25,6 +26,7 @@ class _ResourcesPageState extends State<ResourcesPage> {
       child: SafeArea(
         child: Scaffold(
           endDrawer: Drawer(
+            elevation: 1,
             width: MediaQuery.of(context).size.width * 0.5,
             child: ListView(
               children: [
