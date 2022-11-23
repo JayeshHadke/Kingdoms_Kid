@@ -66,8 +66,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/
-     - assets/images/
+    - assets/
+    - assets/images/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -82,28 +82,28 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-     - family: Dosis
-       fonts:
-         - asset: assets/fonts/Dosis-Bold.ttf
-           style: normal
-           weight: 800
-         - asset: assets/fonts/Dosis-ExtraBold.ttf
-           weight: 700
-         - asset: assets/fonts/Dosis-ExtraLight.ttf
-           weight: 200
-         - asset: assets/fonts/Dosis-Light.ttf
-           weight: 300
-         - asset: assets/fonts/Dosis-Medium.ttf
-           weight: 400
-         - asset: assets/fonts/Dosis-Regular.ttf
-           weight: 500
-         - asset: assets/fonts/Dosis-SemiBold.ttf
-           weight: 600
+    #   - family: Schyler
+    #     fonts:
+    #       - asset: fonts/Schyler-Regular.ttf
+    #       - asset: fonts/Schyler-Italic.ttf
+    #         style: italic
+    - family: Dosis
+      fonts:
+        - asset: assets/fonts/Dosis-Bold.ttf
+          style: normal
+          weight: 800
+        - asset: assets/fonts/Dosis-ExtraBold.ttf
+          weight: 700
+        - asset: assets/fonts/Dosis-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Dosis-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Dosis-Medium.ttf
+          weight: 400
+        - asset: assets/fonts/Dosis-Regular.ttf
+          weight: 500
+        - asset: assets/fonts/Dosis-SemiBold.ttf
+          weight: 600
 
 
   # For details regarding fonts from package dependencies,

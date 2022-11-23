@@ -20,11 +20,11 @@ var arrSliderHeading = [
   'Book Slots...'
 ];
 var arrSliderBody = [
-  'The curriculum  is designed for interaction &\nDiscussion, keeping the focus on Students.\nThe teacher will be a guide to facilitate\ntheir self learning process.',
-  'Get Latest Kids Songs\n& Sing along with Karaoke.',
-  "Craft, Experiment, Puppet\nScripts, Skit & Much More.",
-  'Talk 1 X 1 Best Counsellors\n for any of Life Challenges.',
-  "Book Slots for All\nUpcoming Offline Resource's\nin Just One Click."
+  'The curriculum  is designed for interaction & Discussion, keeping the focus on Students. The teacher will be a guide to facilitate their self learning process.',
+  'Get Latest Kids Songs & Sing along with Karaoke.',
+  "Craft, Experiment, Puppet Scripts, Skit & Much More.",
+  'Talk 1 X 1 Best Counsellors for any of Life Challenges.',
+  "Book Slots for All Upcoming Offline Resource's in Just One Click."
 ];
 var arrSliderImages = [
   'assets/images/praying_lady.png',

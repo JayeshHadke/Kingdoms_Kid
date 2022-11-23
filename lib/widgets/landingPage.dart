@@ -12,11 +12,17 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
+    // Creating Scaffold Layout
     return Scaffold(
+      // Creating SafeArea Widget to Avoid Pixel Overflow for Different Devices
       body: SafeArea(
+        // Creating OrientationBuilder to Handel Orientation Events
         child: OrientationBuilder(
           builder: (context, orientation) {
+            // Checking Orientation
+            // orientation returns a Parent/Caller Orientation
             if (orientation == Orientation.portrait) {
+              // If Orientation is Portrait
               return SingleChildScrollView(
                 child: Column(
                   children: [
@@ -80,6 +86,7 @@ class _LandingPageState extends State<LandingPage> {
                 ),
               );
             } else {
+              // If Orientation is Landscape
               return Row(
                 children: [
                   SizedBox(

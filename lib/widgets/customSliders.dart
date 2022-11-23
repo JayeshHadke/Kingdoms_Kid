@@ -57,38 +57,42 @@ class _CustomSliderState extends State<CustomSlider> {
           bottom: MediaQuery.of(context).size.height * 0.01,
           left: MediaQuery.of(context).size.width * 0.05,
           right: MediaQuery.of(context).size.width * 0.02),
-      child: Row(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.01,
+          ),
+          Text(
+            getSliderHeading(index),
+            style: TextStyle(
+                fontFamily: 'Dosis',
+                color: Colors.white,
+                fontSize: MediaQuery.of(context).size.height * 0.034),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SizedBox(
-                height: MediaQuery.of(context).size.height * 0.01,
+              Flexible(
+                child: Text(
+                  getSliderBody(index),
+                  style: TextStyle(
+                      fontFamily: 'Dosis',
+                      color: Colors.white,
+                      fontSize: MediaQuery.of(context).size.height * 0.02),
+                ),
               ),
-              Text(
-                getSliderHeading(index),
-                style: TextStyle(
-                    fontFamily: 'Dosis',
-                    color: Colors.white,
-                    fontSize: MediaQuery.of(context).size.height * 0.034),
-              ),
-              Text(
-                getSliderBody(index),
-                style: TextStyle(
-                    fontFamily: 'Dosis',
-                    color: Colors.white,
-                    fontSize: MediaQuery.of(context).size.height * 0.02),
+              Center(
+                child: Flexible(
+                  child: Image(
+                    width: MediaQuery.of(context).size.width * 0.2,
+                    image: AssetImage(getSliderImages(index)),
+                  ),
+                ),
               ),
             ],
-          ),
-          Center(
-            child: Image(
-              width: MediaQuery.of(context).size.width * 0.2,
-              image: AssetImage(getSliderImages(index)),
-            ),
-          ),
+          )
         ],
       ),
     );
