@@ -5,7 +5,10 @@ import 'package:kingdoms_kids/widgets/musicPlayer.dart';
 import 'package:kingdoms_kids/widgets/videoPlayer.dart';
 
 void main() {
+  // Use to Call Native Binding
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Restrict Orientation To Portrait Mode
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }
@@ -21,11 +24,16 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // Disable Debug Banner
       debugShowCheckedModeBanner: false,
+
+      // Creating Name Routes
       routes: <String, WidgetBuilder>{
         'musicPlayer': (context) => MusicPlayer(),
         'videoPlayer': (context) => VideoPlayer(),
       },
+
+      // Calling Home Widget
       home: const LandingPage(),
     );
   }
