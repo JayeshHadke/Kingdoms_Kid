@@ -453,7 +453,7 @@ var arrStore = [
     address:
         'Bangalore/The-Olive-Book-Shop-Opposite-To-FGAG-Church-Indiranagar/080PXX80-XX80-151105110326-Z8V7_BZDET',
     imgPath:
-        'https://pixabay.com/get/gab9e5fb946f299958ae9e4458422f2e91c112c9d4cdce3fa6ef3ee620cec052ef4517a4bd250d97829cc801695625a8ce6d6c5c57c22ec99dc05bcc8526410f89c5116eff45339ad5effced436ef40d0_1280.png?attachment=',
+        'https://cdn.pixabay.com/photo/2016/09/16/19/19/online-store-1674907_960_720.png',
     phoneNo: "9980413610",
   ),
 ];

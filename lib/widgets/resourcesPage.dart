@@ -167,7 +167,7 @@ class _ResourcesPageState extends State<ResourcesPage> {
                 style: TextStyle(
                     fontFamily: 'Dosis',
                     color: Colors.white,
-                    fontSize: MediaQuery.of(context).size.height * 0.022),
+                    fontSize: MediaQuery.of(context).size.height * 0.02),
               ),
             ),
           ),

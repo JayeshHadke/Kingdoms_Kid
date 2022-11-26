@@ -33,7 +33,7 @@ class _BookSlotPageState extends State<BookSlotPage> {
         body: Center(
           child: GridView(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, childAspectRatio: 0.9),
+                crossAxisCount: 2, childAspectRatio: 0.6),
             children: List.generate(
               bookSlotList.length,
               (index) => Container(
@@ -61,7 +61,7 @@ class _BookSlotPageState extends State<BookSlotPage> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontFamily: 'Dosis',
-                            fontSize: MediaQuery.of(context).size.width * 0.05,
+                            fontSize: MediaQuery.of(context).size.width * 0.07,
                             color: Colors.black,
                             fontWeight: FontWeight.normal,
                           ),

@@ -58,6 +58,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
           body: Stack(
             children: [
               /* Music Player List with Images and Titles */
+
               Positioned(
                 top: 0,
                 left: 0,
@@ -97,32 +98,34 @@ class _MusicPlayerState extends State<MusicPlayer> {
                             SizedBox(
                               width: MediaQuery.of(context).size.width * 0.02,
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  musicPlayerListByLanguage(lanIndex)
-                                      .keys
-                                      .toList()[index],
-                                  style: TextStyle(
-                                      fontFamily: 'Dosis',
-                                      color: Colors.black,
-                                      fontSize:
-                                          MediaQuery.of(context).size.height *
-                                              0.03),
-                                ),
-                                Text(
-                                  musicPlayerListByLanguage(lanIndex)
-                                      .keys
-                                      .toList()[index],
-                                  style: TextStyle(
-                                      fontFamily: 'Dosis',
-                                      color: Colors.black45,
-                                      fontSize:
-                                          MediaQuery.of(context).size.height *
-                                              0.025),
-                                ),
-                              ],
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    musicPlayerListByLanguage(lanIndex)
+                                        .keys
+                                        .toList()[index],
+                                    style: TextStyle(
+                                        fontFamily: 'Dosis',
+                                        color: Colors.black,
+                                        fontSize:
+                                            MediaQuery.of(context).size.height *
+                                                0.028),
+                                  ),
+                                  Text(
+                                    musicPlayerListByLanguage(lanIndex)
+                                        .keys
+                                        .toList()[index],
+                                    style: TextStyle(
+                                        fontFamily: 'Dosis',
+                                        color: Colors.black45,
+                                        fontSize:
+                                            MediaQuery.of(context).size.height *
+                                                0.022),
+                                  ),
+                                ],
+                              ),
                             ),
                           ],
                         ),

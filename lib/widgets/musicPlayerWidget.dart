@@ -25,6 +25,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
   var path;
   bool isLoop = false;
   bool isPlaying = false;
+
   _MusicPlayerWidgetState({
     required this.arr,
   }) {
@@ -74,7 +75,7 @@ class _MusicPlayerWidgetState extends State<MusicPlayerWidget> {
           style: TextStyle(
               fontFamily: 'Dosis',
               color: Colors.black,
-              fontSize: MediaQuery.of(context).size.height * 0.04),
+              fontSize: MediaQuery.of(context).size.height * 0.035),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

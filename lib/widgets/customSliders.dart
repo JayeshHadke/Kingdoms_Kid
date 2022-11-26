@@ -45,31 +45,64 @@ class _CustomSliderState extends State<CustomSlider> {
           ],
           color: mainColor,
           borderRadius:
-              BorderRadius.circular(MediaQuery.of(context).size.width * 0.08)),
+          BorderRadius.circular(MediaQuery
+              .of(context)
+              .size
+              .width * 0.08)),
       margin: EdgeInsets.only(
-        bottom: MediaQuery.of(context).size.width * 0.035,
-        top: MediaQuery.of(context).size.width * 0.01,
-        right: MediaQuery.of(context).size.width * 0.02,
-        left: MediaQuery.of(context).size.width * 0.02,
+        bottom: MediaQuery
+            .of(context)
+            .size
+            .width * 0.035,
+        top: MediaQuery
+            .of(context)
+            .size
+            .width * 0.01,
+        right: MediaQuery
+            .of(context)
+            .size
+            .width * 0.02,
+        left: MediaQuery
+            .of(context)
+            .size
+            .width * 0.02,
       ),
       padding: EdgeInsets.only(
-          top: MediaQuery.of(context).size.height * 0.01,
-          bottom: MediaQuery.of(context).size.height * 0.01,
-          left: MediaQuery.of(context).size.width * 0.05,
-          right: MediaQuery.of(context).size.width * 0.02),
+          top: MediaQuery
+              .of(context)
+              .size
+              .height * 0.01,
+          bottom: MediaQuery
+              .of(context)
+              .size
+              .height * 0.01,
+          left: MediaQuery
+              .of(context)
+              .size
+              .width * 0.05,
+          right: MediaQuery
+              .of(context)
+              .size
+              .width * 0.02),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.01,
+            height: MediaQuery
+                .of(context)
+                .size
+                .height * 0.01,
           ),
           Text(
             getSliderHeading(index),
             style: TextStyle(
                 fontFamily: 'Dosis',
                 color: Colors.white,
-                fontSize: MediaQuery.of(context).size.height * 0.034),
+                fontSize: MediaQuery
+                    .of(context)
+                    .size
+                    .height * 0.034),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,13 +113,19 @@ class _CustomSliderState extends State<CustomSlider> {
                   style: TextStyle(
                       fontFamily: 'Dosis',
                       color: Colors.white,
-                      fontSize: MediaQuery.of(context).size.height * 0.02),
+                      fontSize: MediaQuery
+                          .of(context)
+                          .size
+                          .height * 0.02),
                 ),
               ),
               Center(
                 child: Flexible(
                   child: Image(
-                    width: MediaQuery.of(context).size.width * 0.2,
+                    width: MediaQuery
+                        .of(context)
+                        .size
+                        .width * 0.2,
                     image: AssetImage(getSliderImages(index)),
                   ),
                 ),
