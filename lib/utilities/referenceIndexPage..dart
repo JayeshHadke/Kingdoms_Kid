@@ -13,7 +13,7 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 //  Slider Section
 var arrSliderHeading = [
-  'Training Material...',
+  'Sunday School Curriculum...',
   'Songs & Music..',
   "Get Resources...",
   'Stay Stress Free...',
@@ -21,10 +21,10 @@ var arrSliderHeading = [
 ];
 var arrSliderBody = [
   'The curriculum  is designed for interaction & Discussion, keeping the focus on Students. The teacher will be a guide to facilitate their self learning process.',
-  'Get Latest Kids Songs & Sing along with Karaoke.',
-  "Craft, Experiment, Puppet Scripts, Skit & Much More.",
-  'Talk 1 X 1 Best Counsellors for any of Life Challenges.',
-  "Book Slots for All Upcoming Offline Resource's in Just One Click."
+  'Discover and sing the latest kids songs with karaoke on our Android/IOS app, providing endless fun and entertainment for children.',
+  "Discover fun crafts, exciting experiments, engaging puppet scripts, entertaining skits, and much more with our user-friendly Android/IOS app.",
+  'Connect with a counselor to discuss and find solutions for your emotional issues through personal one-on-one sessions.',
+  "Easily book slots for upcoming offline resources with just one click using our convenient Android/IOS app."
 ];
 var arrSliderImages = [
   'assets/images/praying_lady.png',
@@ -211,15 +211,15 @@ void Exit(BuildContext context) {
 // 3Years Curriculum
 
 var arr3YearsCurriculum = <String, String>{
-  '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
-  '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
-  'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
-  'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
-  'Sample': 'https://www.africau.edu/images/default/sample.pdf'
+  // '1 Students - CDSIAG Kannada':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  // '1 Teachers - CDSIAG Kannada':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  // 'CFI-ENGLISH 4 Student':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  // 'CFI-ENGLISH 4 Teachers':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+  // 'Sample': 'https://www.africau.edu/images/default/sample.pdf'
 };
 
 String get3YearsCurriculumLink(int index) {
@@ -281,14 +281,14 @@ String getSeasonalCurriculumName(int index) {
 }
 
 var arrVBSCurriculum = <String, String>{
-  '1 Students - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
-  '1 Teachers - CDSIAG Kannada':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
-  'CFI-ENGLISH 4 Student':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
-  'CFI-ENGLISH 4 Teachers':
-      'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
+  // '1 Students - CDSIAG Kannada':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Students%20-%20CDSIAG%20Kannada.pdf',
+  // '1 Teachers - CDSIAG Kannada':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/1%20Teachers%20-%20CDSIAG%20Kannada.pdf',
+  // 'CFI-ENGLISH 4 Student':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Student.pdf',
+  // 'CFI-ENGLISH 4 Teachers':
+  // 'https://raw.githubusercontent.com/JayeshHadke/Kingdoms_Kid/master/Content/data/Pdfs/CFI-ENGLISH%204%20Teachers.pdf',
 };
 
 String getVBSCurriculumLink(int index) {
@@ -473,7 +473,7 @@ var LanguageImage = <String>[
   'assets/images/English.png',
   'assets/images/Tamil.png',
   'assets/images/Telugu.png',
-  'assets/images/Telugu.png',
+  // 'assets/images/Telugu.png',
   'assets/images/Hindi.png',
   'assets/images/Kannada.png',
   'assets/images/Marathi.png',

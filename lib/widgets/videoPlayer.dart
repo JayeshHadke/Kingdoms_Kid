@@ -34,7 +34,10 @@ class _VideoPlayerState extends State<VideoPlayer> {
   @override
   Widget build(BuildContext context) {
     // _controller.toggleFullScreenMode();
-    final val = ModalRoute.of(context)!.settings.arguments as passedArguments;
+    final val = ModalRoute
+        .of(context)!
+        .settings
+        .arguments as passedArguments;
     int lanIndex = val.index;
     return SafeArea(
       child: OrientationBuilder(
@@ -49,7 +52,10 @@ class _VideoPlayerState extends State<VideoPlayer> {
                   style: TextStyle(
                       fontFamily: 'Dosis',
                       color: Colors.white,
-                      fontSize: MediaQuery.of(context).size.height * 0.04),
+                      fontSize: MediaQuery
+                          .of(context)
+                          .size
+                          .height * 0.04),
                 ),
               ),
               body: OrientationBuilder(
@@ -63,21 +69,30 @@ class _VideoPlayerState extends State<VideoPlayer> {
                           left: 0,
                           right: 0,
                           // height: loaded ? MediaQuery.of(context).size.height * 0.26 : 0,
-                          height: MediaQuery.of(context).size.height * 0.26,
+                          height: MediaQuery
+                              .of(context)
+                              .size
+                              .height * 0.26,
                           child: youtube(),
                         ),
                         Positioned(
                           // top: loaded ? MediaQuery.of(context).size.height * 0.28 : 0,
-                          top: MediaQuery.of(context).size.height * 0.28,
+                          top: MediaQuery
+                              .of(context)
+                              .size
+                              .height * 0.28,
                           left: 0,
                           right: 0,
                           // height: loaded
                           //     ? MediaQuery.of(context).size.height * 0.58
                           //     : MediaQuery.of(context).size.height * 0.98,
-                          height: MediaQuery.of(context).size.height * 0.58,
+                          height: MediaQuery
+                              .of(context)
+                              .size
+                              .height * 0.58,
                           child: ListView.builder(
                             itemCount:
-                                songsPlayerListByLanguage(lanIndex).length,
+                            songsPlayerListByLanguage(lanIndex).length,
                             scrollDirection: Axis.vertical,
                             itemBuilder: (context, index) {
                               return GestureDetector(
@@ -99,11 +114,17 @@ class _VideoPlayerState extends State<VideoPlayer> {
                                     ),
                                     margin: EdgeInsets.symmetric(
                                         vertical:
-                                            MediaQuery.of(context).size.height *
-                                                0.01,
+                                        MediaQuery
+                                            .of(context)
+                                            .size
+                                            .height *
+                                            0.01,
                                         horizontal:
-                                            MediaQuery.of(context).size.width *
-                                                0.03),
+                                        MediaQuery
+                                            .of(context)
+                                            .size
+                                            .width *
+                                            0.03),
                                     height: 100,
                                     width: double.maxFinite,
                                     child: Row(
@@ -111,30 +132,32 @@ class _VideoPlayerState extends State<VideoPlayer> {
                                         Image.network(
                                           YoutubePlayer.getThumbnail(
                                             videoId: songsPlayerListByLanguage(
-                                                    lanIndex)
+                                                lanIndex)
                                                 .values
                                                 .toList()[index],
                                           ),
                                         ),
                                         SizedBox(
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
+                                          width: MediaQuery
+                                              .of(context)
+                                              .size
+                                              .width *
                                               0.02,
                                         ),
                                         Column(
                                           children: [
                                             SizedBox(
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
+                                              height: MediaQuery
+                                                  .of(context)
+                                                  .size
+                                                  .height *
                                                   0.01,
                                             ),
                                             Wrap(
                                               children: [
                                                 Text(
                                                   songsPlayerListByLanguage(
-                                                          lanIndex)
+                                                      lanIndex)
                                                       .keys
                                                       .toList()[index],
                                                   softWrap: true,
@@ -142,10 +165,11 @@ class _VideoPlayerState extends State<VideoPlayer> {
                                                       fontFamily: 'Dosis',
                                                       color: Colors.black,
                                                       fontSize:
-                                                          MediaQuery.of(context)
-                                                                  .size
-                                                                  .height *
-                                                              0.02),
+                                                      MediaQuery
+                                                          .of(context)
+                                                          .size
+                                                          .height *
+                                                          0.02),
                                                 ),
                                               ],
                                             ),
@@ -158,7 +182,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
                                 onTap: () {
                                   // _controller.reload();
                                   setState(
-                                    () {
+                                        () {
                                       if (!loaded) {
                                         const SnackBar snackBar = SnackBar(
                                           duration: Duration(seconds: 1),
@@ -169,9 +193,9 @@ class _VideoPlayerState extends State<VideoPlayer> {
                                             .showSnackBar(snackBar);
                                       } else {
                                         videoId =
-                                            songsPlayerListByLanguage(lanIndex)
-                                                .values
-                                                .toList()[index];
+                                        songsPlayerListByLanguage(lanIndex)
+                                            .values
+                                            .toList()[index];
 
                                         _controller.load(videoId);
                                         _controller.play();
@@ -212,7 +236,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
       controller: _controller,
       onReady: () {
         setState(
-          () {
+              () {
             loaded = true;
           },
         );

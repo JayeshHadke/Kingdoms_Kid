@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kingdoms_kids/utilities/colors.dart';
 import 'package:kingdoms_kids/widgets/mainPage.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -40,8 +41,8 @@ class _LandingPageState extends State<LandingPage> {
                       height: MediaQuery.of(context).size.height * 0.1,
                     ),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * 0.06,
-                      width: MediaQuery.of(context).size.width * 0.8,
+                      height: 06.0.h,
+                      width: 80.0.w,
                       child: OutlinedButton(
                         style: ButtonStyle(
                           shape: MaterialStateProperty.all(

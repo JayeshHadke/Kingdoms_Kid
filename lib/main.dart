@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/widgets/landingPage.dart';
 import 'package:kingdoms_kids/widgets/musicPlayer.dart';
 import 'package:kingdoms_kids/widgets/videoPlayer.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() {
   // Use to Call Native Binding
@@ -23,18 +24,22 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // Disable Debug Banner
-      debugShowCheckedModeBanner: false,
+    return ResponsiveSizer(
+      builder: (context,orientation,deviceType){
+        return MaterialApp(
+          // Disable Debug Banner
+          debugShowCheckedModeBanner: false,
 
-      // Creating Name Routes
-      routes: <String, WidgetBuilder>{
-        'musicPlayer': (context) => MusicPlayer(),
-        'videoPlayer': (context) => VideoPlayer(),
-      },
+          // Creating Name Routes
+          routes: <String, WidgetBuilder>{
+            'musicPlayer': (context) => MusicPlayer(),
+            'videoPlayer': (context) => VideoPlayer(),
+          },
 
-      // Calling Home Widget
-      home: const LandingPage(),
+          // Calling Home Widget
+          home: const LandingPage(),
+        );
+      }
     );
   }
 }

@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:kingdoms_kids/widgets/customSliders.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
+
 
 import 'mainPageTail.dart';
 
@@ -130,7 +132,7 @@ class _MainPageState extends State<MainPage> {
                     ),
                   ),
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.22,
+                    height: 28.0.h,
                     width: double.maxFinite,
                     child: const CustomSlider(),
                   ),

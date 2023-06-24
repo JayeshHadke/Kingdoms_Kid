@@ -45,93 +45,65 @@ class _CustomSliderState extends State<CustomSlider> {
           ],
           color: mainColor,
           borderRadius:
-          BorderRadius.circular(MediaQuery
-              .of(context)
-              .size
-              .width * 0.08)),
+              BorderRadius.circular(MediaQuery.of(context).size.width * 0.08)),
       margin: EdgeInsets.only(
-        bottom: MediaQuery
-            .of(context)
-            .size
-            .width * 0.035,
-        top: MediaQuery
-            .of(context)
-            .size
-            .width * 0.01,
-        right: MediaQuery
-            .of(context)
-            .size
-            .width * 0.02,
-        left: MediaQuery
-            .of(context)
-            .size
-            .width * 0.02,
+        bottom: MediaQuery.of(context).size.width * 0.035,
+        top: MediaQuery.of(context).size.width * 0.01,
+        right: MediaQuery.of(context).size.width * 0.02,
+        left: MediaQuery.of(context).size.width * 0.02,
       ),
       padding: EdgeInsets.only(
-          top: MediaQuery
-              .of(context)
-              .size
-              .height * 0.01,
-          bottom: MediaQuery
-              .of(context)
-              .size
-              .height * 0.01,
-          left: MediaQuery
-              .of(context)
-              .size
-              .width * 0.05,
-          right: MediaQuery
-              .of(context)
-              .size
-              .width * 0.02),
+          top: MediaQuery.of(context).size.height * 0.01,
+          bottom: MediaQuery.of(context).size.height * 0.01,
+          left: MediaQuery.of(context).size.width * 0.05,
+          right: MediaQuery.of(context).size.width * 0.02),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(
-            height: MediaQuery
-                .of(context)
-                .size
-                .height * 0.01,
+            height: MediaQuery.of(context).size.height * 0.01,
           ),
-          Text(
-            getSliderHeading(index),
-            style: TextStyle(
-                fontFamily: 'Dosis',
-                color: Colors.white,
-                fontSize: MediaQuery
-                    .of(context)
-                    .size
-                    .height * 0.034),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          Column(
             children: [
-              Flexible(
+              // make this text left side aligned
+              SizedBox(
+                width: MediaQuery.of(context).size.width,
                 child: Text(
-                  getSliderBody(index),
+                  getSliderHeading(index),
                   style: TextStyle(
                       fontFamily: 'Dosis',
                       color: Colors.white,
-                      fontSize: MediaQuery
-                          .of(context)
-                          .size
-                          .height * 0.02),
+                      fontSize: MediaQuery.of(context).size.height * 0.034),
                 ),
               ),
-              Center(
-                child: Flexible(
-                  child: Image(
-                    width: MediaQuery
-                        .of(context)
-                        .size
-                        .width * 0.2,
-                    image: AssetImage(getSliderImages(index)),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.01,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Flexible(
+                    child: Text(
+                      getSliderBody(index),
+                      style: TextStyle(
+                          fontFamily: 'Dosis',
+                          color: Colors.white,
+                          fontSize: MediaQuery.of(context).size.height * 0.02),
+                    ),
                   ),
-                ),
-              ),
+                  Center(
+                    child: Flexible(
+                      child: Image(
+                        width: MediaQuery.of(context).size.width * 0.2,
+                        image: AssetImage(getSliderImages(index)),
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
-          )
+          ),
         ],
       ),
     );
